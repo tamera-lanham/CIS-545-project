@@ -88,7 +88,7 @@ def combine(defaultdicts):
     return result
 
 def dict_to_numpy(dictionary, n):
-    values = np.zeros((n+1, n+1), dtype=np.int32)
+    values = np.zeros((n, n), dtype=np.int32)
     for (i, j), value in dictionary.items():
         values[int(i), int(j)] = int(value)
         
